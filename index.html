@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,500&display=swap" rel="stylesheet">
+
+  <title>Mafia42 email</title>
+  
+  
+  <style>
+    body{
+      background:#280c49;
+     margin:0px;
+     font-family: 'Rubik', sans-serif;
+    }
+    #container{
+  background: #8a47ba;
+  position: absolute;
+  top: 25%;
+  width:95%;
+  left:2.5%;
+  height:50%;
+  border-radius: 2%;
+    }
+    #email{
+      color:#F6F7F8;
+    }
+    img{
+      width:240px;
+      height:192px;
+    }
+    .button {
+  font-family: 'Rubik', sans-serif;
+  position: relative;
+  background-color: transparent;
+  color: #e8e8e8;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 10px;
+  width: 150px;
+  height: 60px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(51, 51, 51, 0.2);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button::before {
+  content: "انت ذاهب الان!";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(135deg,#7b4397,#dc2430 );
+  transform: translate(0%,90%);
+  z-index: 99;
+  position: relative;
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button::after {
+  content: "اضغط هنا";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transform-origin: top;
+  transform: translate(0%,-100%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+  transform: translate(0%,0%);
+}
+
+.button:hover::after {
+  transform: translate(0%,-200%);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:active {
+  scale: 0.95;
+}
+@media only screen and (min-width: 600px) {
+  h2{
+    font-size: 67px;
+  }
+  img{
+    width:720px;
+    height: 576px;
+  }
+  .button{
+    font-size: 40px;
+    width:340px;
+    height:130px;
+   
+  }
+}
+  </style>
+      </head>
+     <body>
+        <div id="container">
+         <center> <h2 id="email">إرسال رسالة الي ايميل مافيا42</h2> </center>
+         <div>
+         <center><img src="https://media.discordapp.net/attachments/1013774298424545370/1139591941835739246/event_school_assign_popup_culinary.png" ></center>
+         <center><a href="mailto:support@mafia42.kr"><button class="button"></button></a></center>
+         </div>
+        </div>
+        
+     </body>
+  </html>
